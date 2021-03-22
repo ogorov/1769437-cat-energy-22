@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Nikolay Ogorov](https://up.htmlacademy.ru/adaptive/22/user/1769437).
-* Наставник: `Дмитрий Вашкевич`.
+* Наставник: [Дмитрий Вашкевич](https://htmlacademy.ru/profile/id116959).
 
 ---
 
