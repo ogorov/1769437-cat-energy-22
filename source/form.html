@@ -31,100 +31,108 @@
 
     <main>
 
-      <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+      <section class="form-section">
 
-        <div class="form__header">
+        <form class="form" action="https://echo.htmlacademy.ru" method="POST">
 
-          <h1 class="form__header1">Подбор программы</h1>
-          <h2 class="form__header2">
-            Заполните анкету, и мы подберем
-            программу питания для вашего кота
-          </h2>
+          <div class="form__header">
 
-        </div>
+            <h1 class="form__header1">Подбор программы</h1>
+            <h2 class="form__header2">
+              Заполните анкету, и мы подберем
+              программу питания для вашего кота
+            </h2>
 
-        <fieldset class="form__fieldset">
+          </div>
 
-          <label class="form__label">
-            ИМЯ:* <input class="form__text" type="text" name="cat_name" placeholder="БАРСИК">
-          </label>
+          <fieldset class="form__fieldset">
 
-          <label class="form__label">
-            Вес (кг):* <input class="form__text" type="text" name="cat_weight" placeholder="7">
-          </label>
+            <label class="form__label">
+              ИМЯ:* <input class="form__text" type="text" name="cat_name" placeholder="БАРСИК">
+            </label>
 
-          <label class="form__label">
-            Возраст (лет): <input class="form__text" type="text" name="cat_age" placeholder="7">
-          </label>
+            <label class="form__label">
+              Вес (кг):* <input class="form__text" type="text" name="cat_weight" placeholder="7">
+            </label>
 
-        </fieldset>
+            <label class="form__label">
+              Возраст (лет): <input class="form__text" type="text" name="cat_age" placeholder="7">
+            </label>
 
-        <fieldset class="form__fieldset">
+          </fieldset>
 
-          <label class="form__label"> <input class="form__radio" type="radio" name="program" value="email"> Похудение </label>
-          <label class="form__label"> <input class="form__radio" type="radio" name="program" value="email"> Набор массы </label>
-          <label class="form__label"> <input class="form__radio" type="radio" name="program" value="email"> Не знаю (Нужен ваш совет) </label>
+          <fieldset class="form__fieldset">
 
-        </fieldset>
+            <label class="form__label"> <input class="form__radio" type="radio" name="program" value="email"> Похудение </label>
+            <label class="form__label"> <input class="form__radio" type="radio" name="program" value="email"> Набор массы </label>
+            <label class="form__label"> <input class="form__radio" type="radio" name="program" value="email"> Не знаю (Нужен ваш совет) </label>
 
-        <fieldset class="form__fieldset">
+          </fieldset>
 
-          <legend class="form__legend">
-            Контактные данные
-            (владельца кота)
-          </legend>
+          <fieldset class="form__fieldset">
 
-          <label class="form__label">
-            E-mail:* <input class="form__email" type="email" name="email" placeholder="kuklachev@gmail.com">
-          </label>
+            <legend class="form__legend">
+              Контактные данные
+              (владельца кота)
+            </legend>
 
-          <label class="form__label">
-            Телефон:* <input class="form__phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
-          </label>
+            <label class="form__label">
+              E-mail:* <input class="form__email" type="email" name="email" placeholder="kuklachev@gmail.com">
+            </label>
 
-        </fieldset>
+            <label class="form__label">
+              Телефон:* <input class="form__phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+            </label>
 
-        <fieldset class="form__fieldset">
+          </fieldset>
 
-          <legend class="form__legend">Комментарий</legend>
+          <fieldset class="form__fieldset">
 
-          <label class="form__label">
-            <input class="form__text form__text--big" type="text" name="comment" placeholder="Расскажите обо всех повадках кота">
-          </label>
+            <legend class="form__legend">Комментарий</legend>
 
-        </fieldset>
+            <label class="form__label">
+              <input class="form__text form__text--big" type="text" name="comment" placeholder="Расскажите обо всех повадках кота">
+            </label>
 
-        <fieldset class="form__fieldset">
+          </fieldset>
 
-          <legend class="form__legend">Дополнительно</legend>
+          <fieldset class="form__fieldset">
 
-          <label class="form__label">
-            <input class="form__checkbox" type="checkbox" name="sugar_substitute"> сахарозаменитель
-          </label>
+            <legend class="form__legend">Дополнительно</legend>
 
-          <label class="form__label">
-            <input class="form__checkbox" type="checkbox" name="water"> питьевая вода
-          </label>
+            <label class="form__label">
+              <input class="form__checkbox" type="checkbox" name="sugar_substitute"> сахарозаменитель
+            </label>
 
-          <label class="form__label">
-            <input class="form__checkbox" type="checkbox" name="milk"> молоко
-          </label>
+            <label class="form__label">
+              <input class="form__checkbox" type="checkbox" name="water"> питьевая вода
+            </label>
 
-          <label class="form__label">
-            <input class="form__checkbox" type="checkbox" name="vitamins"> витамины
-          </label>
+            <label class="form__label">
+              <input class="form__checkbox" type="checkbox" name="milk"> молоко
+            </label>
 
-        </fieldset>
+            <label class="form__label">
+              <input class="form__checkbox" type="checkbox" name="vitamins"> витамины
+            </label>
 
-        <div class="form__footer">
+          </fieldset>
 
-          <input class="form__submit" type="submit" value="отправить заявку">
+          <div class="form__footer">
 
-          <span class="form__remark">* — Обязательные поля</span>
+            <input class="form__submit" type="submit" value="отправить заявку">
 
-        </div>
+            <span class="form__remark">* — Обязательные поля</span>
 
-      </form>
+          </div>
+
+        </form>
+
+      </section>
+
+      <section class="map">
+        <h2 class="map__title">Как добраться</h2>
+      </section>
 
     </main>
 
