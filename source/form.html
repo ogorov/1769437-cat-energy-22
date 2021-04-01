@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body class="page__body">
+
+    <header class="page-header">
+
+      <div class="page-header__logo-img">
+        <img src="img/logo-img.svg" alt="">
+      </div>
+      <div class="page-header__logo">
+        <img class="logo" src="img/logo.svg" alt="">
+      </div>
+
+      <div class="page-header__menu">
+        <button class="page-header__burger">
+          <img src="img/burger.svg" alt="">
+        </button>
+
+        <ul  class="page-header__list">
+          <li class="page-header__item page-header__item--active">ГЛАВНАЯ</li>
+          <li class="page-header__item">КАТАЛОГ ПРОДУКЦИИ</li>
+          <li class="page-header__item">ПОДБОР ПРОГРАММЫ</li>
+        </ul>
+      </div>
+
+    </header>
+
+    <main>
+
+      <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+
+        <div class="form__header">
+
+          <h1 class="form__header1">Подбор программы</h1>
+          <h2 class="form__header2">
+            Заполните анкету, и мы подберем
+            программу питания для вашего кота
+          </h2>
+
+        </div>
+
+        <fieldset class="form__fieldset">
+
+          <label class="form__label">
+            ИМЯ:* <input class="form__text" type="text" name="cat_name" placeholder="БАРСИК">
+          </label>
+
+          <label class="form__label">
+            Вес (кг):* <input class="form__text" type="text" name="cat_weight" placeholder="7">
+          </label>
+
+          <label class="form__label">
+            Возраст (лет): <input class="form__text" type="text" name="cat_age" placeholder="7">
+          </label>
+
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+
+          <label class="form__label"> <input class="form__radio" type="radio" name="program" value="email"> Похудение </label>
+          <label class="form__label"> <input class="form__radio" type="radio" name="program" value="email"> Набор массы </label>
+          <label class="form__label"> <input class="form__radio" type="radio" name="program" value="email"> Не знаю (Нужен ваш совет) </label>
+
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+
+          <legend class="form__legend">
+            Контактные данные
+            (владельца кота)
+          </legend>
+
+          <label class="form__label">
+            E-mail:* <input class="form__email" type="email" name="email" placeholder="kuklachev@gmail.com">
+          </label>
+
+          <label class="form__label">
+            Телефон:* <input class="form__phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+          </label>
+
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+
+          <legend class="form__legend">Комментарий</legend>
+
+          <label class="form__label">
+            <input class="form__text form__text--big" type="text" name="comment" placeholder="Расскажите обо всех повадках кота">
+          </label>
+
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+
+          <legend class="form__legend">Дополнительно</legend>
+
+          <label class="form__label">
+            <input class="form__checkbox" type="checkbox" name="sugar_substitute"> сахарозаменитель
+          </label>
+
+          <label class="form__label">
+            <input class="form__checkbox" type="checkbox" name="water"> питьевая вода
+          </label>
+
+          <label class="form__label">
+            <input class="form__checkbox" type="checkbox" name="milk"> молоко
+          </label>
+
+          <label class="form__label">
+            <input class="form__checkbox" type="checkbox" name="vitamins"> витамины
+          </label>
+
+        </fieldset>
+
+        <div class="form__footer">
+
+          <input class="form__submit" type="submit" value="отправить заявку">
+
+          <span class="form__remark">* — Обязательные поля</span>
+
+        </div>
+
+      </form>
+
+    </main>
+
+    <footer class="page-footer">
+
+      <div class="page-footer__logo">
+        <img class="logo" src="img/logo.svg" alt="">
+      </div>
+
+      <div class="page-footer__social-networks">
+        <a href="">
+          <img class="page-footer__icon" src="img/icon_vkontakte.svg" alt="">
+        </a>
+        <a href="">
+          <img class="page-footer__icon" src="img/icon_instagram.svg" alt="">
+        </a>
+        <a href="">
+          <img class="page-footer__icon" src="img/icon_facebook.svg" alt="">
+        </a>
+      </div>
+
+      <div class="page-footer__creators">
+        <span class="text">HTML Academy</span>
+        <div class="page-footer__academy-logo">
+          <img class="logo" src="img/htmlacademy.svg" alt="">
+        </div>
+      </div>
+
+    </footer>
+
+  </body>
+</html>
