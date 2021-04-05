@@ -1,0 +1,46 @@
+.social-networks {
+  display: flex;
+  justify-content: center;
+
+  padding: 20px;
+}
+
+.social-networks__item {
+
+}
+
+.social-networks__icon {
+  &:hover path {
+    fill: @base-green;
+  }
+
+  &:active path {
+    fill: @base-green;
+    opacity: 30%;
+  }
+
+  &--vkontakte {
+    height: 16px;
+    width: 23px;
+  }
+
+  &--instagram {
+    height: 16px;
+    width: 16px;
+  }
+
+  &--facebook {
+    height: 22px;
+    width: 22px;
+
+    &:hover path {
+      fill: none;
+      stroke: @base-green;
+    }
+
+    &:active path {
+      fill: none;
+      stroke: @base-green;
+    }
+  }
+}
