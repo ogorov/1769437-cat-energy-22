@@ -1,13 +1,16 @@
-.green-button {
-  background-color: @base-green;
+.button {
   border: none;
   height: 40px;
-
-  color: white;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: @regular;
   font-size: 14px;
+  line-height: 18px;
   text-transform: uppercase;
+}
+
+.button--green {
+  background-color: @base-green;
+  color: @white;
 
   &:hover {
     background-color: @green-hover;
