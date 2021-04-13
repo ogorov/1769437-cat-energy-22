@@ -1,0 +1,22 @@
+.button {
+  border: none;
+  height: 40px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: @regular;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.button--green {
+  background-color: @base-green;
+  color: @white;
+
+  &:hover {
+    background-color: @green-hover;
+  }
+
+  &:active {
+    background-color: @green-active;
+  }
+}
