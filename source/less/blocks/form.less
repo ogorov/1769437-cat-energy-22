@@ -6,56 +6,76 @@
 
 // }
 
-// .form__main-header {
+.form__main-header {
+  font-size: 36px;
+  line-height: 36px;
+}
 
-// }
+.form__sub-header {
+  font-size: 14px;
+  line-height: 18px;
+}
 
-// .form__sub-header {
+.form__fieldset {
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
 
-// }
+  &--border-simple {
+    border-left: none;
+    border-right: none;
+    border-top: solid @light-grey 1px;
+    border-bottom: solid @light-grey 1px;
+  }
 
-// .form__fieldset {
+  &--border-green {
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: solid @base-green 2px;
+  }
+}
 
-// }
+.form__label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
 
-// .form__label{
+  &--light {
+    color: @dark-grey;
+  }
 
-// }
+  &--dark {
+    color: @black-grey;
+  }
+}
 
-// .form__text {
-//   &--big {
+.form__input {
+  font-size: 16px;
+  line-height: 18px;
+  color: @dark-grey;
+  text-transform: uppercase;
 
-//   }
-// }
+  &--big-text {
+    height: 150px;
+  }
+}
 
-// .form__radio {
-
-// }
-
-// .form__legend {
-
-// }
-
-// .form__email {
-
-// }
-
-// .form__phone {
-
-// }
-
-// .form__checkbox {
-
-// }
+.form__legend {
+  font-size: 24px;
+  line-height: 26px;
+}
 
 // .form__footer {
 
 // }
 
-// .form__submit {
+.form__submit {
+  width: 100%;
+}
 
-// }
-
-// .form__remark {
-
-// }
+.form__remark {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}
