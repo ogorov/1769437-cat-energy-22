@@ -6,6 +6,12 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 11px 5px;
+  cursor: pointer;
 }
 
 .button--green {
@@ -19,4 +25,9 @@
   &:active {
     background-color: @green-active;
   }
+}
+
+.button--grey {
+  background-color: @base-grey;
+  color: @dark-grey;
 }
