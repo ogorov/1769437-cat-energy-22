@@ -1,18 +1,24 @@
 .invation {
-  padding: 19px 28px 19px 26px;
+  padding: 20px;
   display: flex;
-  background-color: @base-grey;
+  justify-content: space-between;
 }
 
 .invation__title {
   font-size: 16px;
   line-height: 18px;
-
   text-transform: uppercase;
 }
 
 .invation__adress {
   font-size: 14px;
   line-height: 20px;
-  padding-left: 20px;
+
+  @media (min-width: @tablet-width){
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width){
+    text-align: left;
+  }
 }

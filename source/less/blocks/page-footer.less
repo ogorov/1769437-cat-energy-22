@@ -1,29 +1,41 @@
 .page-footer {
   padding: 20px;
   background-color: @base-grey;
+
+  @media (min-width: @tablet-width){
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-// .page-footer__logo {
+.page-footer__logo {
+  padding: 20px;
+  text-align: center;
+}
 
-// }
+.page-footer__social-networks {
+  border-top: solid @light-grey 1px;
+  border-bottom: solid @light-grey 1px;
 
-// .page-footer__social-networks {
-
-// }
+  @media (min-width: @tablet-width){
+    border: none;
+  }
+}
 
 .page-footer__creators {
-  padding: 20px;
   display: flex;
   justify-content: space-between;
 }
 
 .page-footer__academy-text {
+  padding: 20px 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .page-footer__academy-logo {
+  padding: 20px 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
