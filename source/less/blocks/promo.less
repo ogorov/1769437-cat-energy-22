@@ -1,17 +1,45 @@
 .promo {
-  background: linear-gradient(fade(@base-green, 85%), fade(@base-green, 85%)) center top/auto 60% no-repeat, url("/img/cat-background.png") center top/auto 60% no-repeat;
+  position: relative;
   padding: 20px;
+  overflow: hidden;
 
   @media (min-width: @tablet-width){
-    position: relative;
     background: none;
     height: 950px;
   }
 
   @media (min-width: @desktop-width){
-    background: linear-gradient(fade(@base-green, 85%), fade(@base-green, 85%)) right top/50% 50% no-repeat, url("/img/cat-background.png") right top/50% 50% no-repeat;
+    background: linear-gradient(fade(@base-green, 85%), fade(@base-green, 85%)) right top/50% 50% no-repeat, url("/img/cat-background.jpeg") right top/50% 50% no-repeat;
     height: 800px;
     padding: 200px;
+  }
+}
+
+.promo__background-image {
+  background: no-repeat url("/img/cat-background.jpeg");
+  background-size: 180%;
+  background-position: 60% 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 63%;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: fade(@base-green, 85%);
+  }
+
+  @media (min-width: @tablet-width){
+    display: none;
   }
 }
 
