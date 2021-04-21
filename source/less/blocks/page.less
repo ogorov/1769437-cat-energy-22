@@ -2,8 +2,15 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: @regular;
   background-color: @bg-color;
+  position: relative;
+
+  @media (min-width: @desktop-width){
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
 }
 
-// .page__body {
-
-// }
+.page__body {
+  max-width: @page-max-width;
+}

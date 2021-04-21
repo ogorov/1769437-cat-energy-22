@@ -4,14 +4,28 @@
   overflow: hidden;
 
   @media (min-width: @tablet-width){
+    box-sizing: border-box;
     background: none;
     height: 950px;
   }
 
   @media (min-width: @desktop-width){
-    background: linear-gradient(fade(@base-green, 85%), fade(@base-green, 85%)) right top/50% 50% no-repeat, url("/img/cat-background.jpeg") right top/50% 50% no-repeat;
-    height: 800px;
-    padding: 200px;
+    height: 696px;
+    padding: 220px;
+  }
+}
+
+.promo__wrapper {
+  width: 100%;
+  height: 100%;
+
+  @media (min-width: @tablet-width){
+    position: relative;
+  }
+
+  @media (min-width: @desktop-width){
+    height: unset;
+    width: unset;
   }
 }
 
@@ -22,7 +36,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: -3;
   width: 100%;
   height: 63%;
 
@@ -30,7 +44,7 @@
     content: "";
     display: block;
     position: absolute;
-    z-index: 1;
+    z-index: -2;
     top: 0;
     left: 0;
     height: 100%;
@@ -40,6 +54,16 @@
 
   @media (min-width: @tablet-width){
     display: none;
+  }
+
+  @media (min-width: @desktop-width){
+    display: block;
+    top: 0;
+    left: 50%;
+    background-size: auto 100%;
+    background-position: -90% 0%;
+    height: 100%;
+    width: 100%;
   }
 }
 
@@ -55,6 +79,7 @@
     line-height: 60px;
     color: @black;
     text-align: left;
+    width: 414px;
   }
 }
 
@@ -71,7 +96,9 @@
     font-size: 20px;
     line-height: 20px;
     text-align: left;
+    width: 283px;
   }
+
 }
 
 .promo__img-jar {
@@ -81,20 +108,18 @@
   @media (min-width: @tablet-width){
     position: absolute;
     z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 0;
-    max-width: 800px;
-    width: 100%;
+    max-width: 1000px;
   }
 
   @media (min-width: @desktop-width){
-    display: block;
-    position: relative;
-    z-index: 0;
-    right: 0;
-    top: 29px;
-    height: 499px;
+    left: 368px;
+    top: -82px;
     width: 552px;
-    order: 4;
+    height: 499px;
+    transform: none;
   }
 }
 
@@ -103,5 +128,13 @@
 
   @media (min-width: @tablet-width){
     width: 244px;
+    height: 54px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width){
+    width: 244px;
+
   }
 }

@@ -1,5 +1,6 @@
 .page-header {
   width: 100%;
+  max-width: @page-max-width;
 
   @media (min-width: @tablet-width){
     display: flex;
@@ -7,7 +8,8 @@
   }
 
   @media (min-width: @desktop-width){
-    float: right;
+    position: absolute;
+    top: 140px;
   }
 }
 
@@ -54,6 +56,10 @@
   @media (min-width: @tablet-width){
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: @tablet-width){
+    padding-right: 80px;
   }
 }
 
