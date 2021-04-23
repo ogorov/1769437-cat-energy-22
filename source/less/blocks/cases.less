@@ -1,7 +1,7 @@
 .cases {
   padding: 20px;
 
-  @media (min-width: @desktop-width){
+  @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-around;
   }
@@ -14,13 +14,13 @@
   padding: 20px;
   background-color: @base-grey;
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     position: relative;
     height: 372px;
     padding: 53px;
   }
 
-  @media (min-width: @desktop-width){
+  @media (min-width: @desktop-width) {
     height: 374px;
     width: 570px;
   }
@@ -28,17 +28,16 @@
 
 .cases__item-header {
   display: flex;
-
 }
 
 .cases__img {
   display: inline-block;
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     position: absolute;
   }
 
-  @media (min-width: @desktop-width){
+  @media (min-width: @desktop-width) {
     position: static;
   }
 
@@ -46,14 +45,14 @@
     width: 50px;
     height: 53px;
 
-    @media (min-width: @tablet-width){
+    @media (min-width: @tablet-width) {
       width: 200px;
       height: 211px;
       right: 62px;
       top: 81px;
     }
 
-    @media (min-width: @desktop-width){
+    @media (min-width: @desktop-width) {
       width: 100px;
       height: 106px;
     }
@@ -63,14 +62,14 @@
     width: 67px;
     height: 50px;
 
-    @media (min-width: @tablet-width){
+    @media (min-width: @tablet-width) {
       width: 268px;
       height: 200px;
       right: 28px;
       top: 91px;
     }
 
-    @media (min-width: @desktop-width){
+    @media (min-width: @desktop-width) {
       width: 134px;
       height: 100px;
     }
@@ -82,7 +81,7 @@
   line-height: 37px;
   text-transform: uppercase;
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
   }
@@ -92,13 +91,13 @@
   font-size: 14px;
   line-height: 18px;
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     width: 377px;
     font-size: 16px;
     line-height: 24px;
   }
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     width: 100%;
   }
 }
@@ -110,7 +109,7 @@
   text-transform: uppercase;
   color: black;
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
@@ -119,13 +118,13 @@
     opacity: 20%;
   }
 
-  &:after {
-    content: url(/img/icon-arrow-right.svg);
+  &::after {
+    content: url("/img/icon-arrow-right.svg");
     padding-left: 17px;
     width: 32px;
     height: 10px;
 
-    @media (min-width: @tablet-width){
+    @media (min-width: @tablet-width) {
       padding-left: 25px;
     }
   }
