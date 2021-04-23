@@ -1,9 +1,9 @@
 .cases {
   padding: 20px;
-  max-width: @page-max-width;
 
   @media (min-width: @desktop-width){
     display: flex;
+    justify-content: space-around;
   }
 }
 
@@ -18,6 +18,11 @@
     position: relative;
     height: 372px;
     padding: 53px;
+  }
+
+  @media (min-width: @desktop-width){
+    height: 374px;
+    width: 570px;
   }
 }
 
@@ -91,6 +96,10 @@
     width: 377px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: @tablet-width){
+    width: 100%;
   }
 }
 

@@ -1,18 +1,36 @@
 .invation {
-  padding: 20px;
+  background-color: @white;
+  padding: 28px 19px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: @tablet-width){
+    padding: 71px 60px;
+  }
 }
 
 .invation__title {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  width: 140px;
+
+  @media (min-width: @tablet-width){
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .invation__adress {
   font-size: 14px;
   line-height: 20px;
+  width: 140px;
+
+  @media (min-width: @tablet-width){
+    font-size: 16px;
+    line-height: 20px;
+  }
 
   @media (min-width: @tablet-width){
     text-align: right;
