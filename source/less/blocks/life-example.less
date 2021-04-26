@@ -1,26 +1,98 @@
 .life-example {
   background-color: @base-grey;
   padding: 20px 25px 20px 25px;
+
+  @media (min-width: @tablet-width) {
+    background: linear-gradient(to bottom, @white 50%, @base-grey 50%);
+
+    padding: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background: linear-gradient(to bottom, @white 30%, @base-grey 30%);
+    display: flex;
+    justify-content: space-around;
+    padding: 75px;
+  }
+}
+
+.life-example__info-block {
+  width: 100%;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+  }
 }
 
 .life-example__title {
   font-size: 36px;
   line-height: 40px;
-  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .life-example__text {
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .life-example__stats {
   width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-// .life-example__stats-item {
+.life-example__params-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-wrap: wrap;
 
-// }
+  @media (min-width: @tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
+
+.life-example__params-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.life-example__stats-cost {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
 
 .life-example__main-stat {
   font-size: 24px;
@@ -33,17 +105,16 @@
   line-height: 12px;
 }
 
-.life-example__stats-cost {
+.life-example__slider-block {
   width: 100%;
-  text-align: center;
-  font-size: 14px;
-  line-height: 20px;
-  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @desktop-width) {
+    width: 50%;
+  }
 }
-
-// .life-example__slider-block {
-
-// }
 
 // .life-example__slider-images {
 
@@ -52,6 +123,14 @@
 .life-example__image {
   width: 100%;
   height: auto;
+
+  // &--before {
+
+  // }
+
+  &--after {
+    display: none;
+  }
 }
 
 // .life-example__footer {
