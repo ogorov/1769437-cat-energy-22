@@ -47,7 +47,7 @@
 
         <form class="form" action="https://echo.htmlacademy.ru" method="POST">
 
-          <div class="form__header">
+          <div class="form__header form__block">
 
             <div class="container">
               <h1 class="header form__main-header">Подбор программы</h1>
@@ -60,7 +60,7 @@
           </div>
 
           <div class="container form__main-block">
-            <fieldset class="form__fieldset">
+            <fieldset class="form__block">
 
               <label class="form__label form__label--light">
                 ИМЯ:* <input class="form__input form__input--text" type="text" name="cat_name" placeholder="Барсик">
@@ -76,14 +76,14 @@
 
             </fieldset>
 
-            <fieldset class="form__fieldset form__fieldset--border">
+            <fieldset class="form__block form__block--border">
               <label class="form__label form__label--dark"> <input class="form__input form__input--radio" type="radio" name="program" value="email"> Похудение </label>
               <label class="form__label form__label--dark"> <input class="form__input form__input--radio" type="radio" name="program" value="email"> Набор массы </label>
               <label class="form__label form__label--dark"> <input class="form__input form__input--radio" type="radio" name="program" value="email"> Не знаю (Нужен ваш совет) </label>
             </fieldset>
           </div>
 
-          <fieldset class="form__fieldset">
+          <fieldset class="form__block">
 
             <div class="container">
               <legend class="form__legend">
@@ -104,7 +104,7 @@
 
           </fieldset>
 
-          <fieldset class="form__fieldset">
+          <fieldset class="form__block">
 
             <div class="container">
               <legend class="form__legend">Комментарий</legend>
@@ -116,7 +116,7 @@
 
           </fieldset>
 
-          <fieldset class="form__fieldset">
+          <fieldset class="form__block">
 
             <div class="container">
               <legend class="form__legend"><span>Дополнительно</span></legend>
@@ -144,7 +144,7 @@
 
           <div class="container">
 
-            <div class="form__footer">
+            <div class="form__footer form__block">
               <input class="form__submit button button--green" type="submit" value="отправить заявку">
 
               <span class="form__remark">* — Обязательные поля</span>
@@ -157,22 +157,23 @@
       </section>
 
       <section class="contacts">
+        <div class="contacts__wrapper">
+          <div class="container contacts__container">
+            <div class="contacts__invation invation">
 
-        <div class="container contacts__container">
-          <div class="contacts__invation invation">
+              <h2 class="header invation__title">
+                ПРИГЛАШАЕМ
+                К&nbsp;СОТРУДНИЧЕСТВУ
+                ДИЛЛЕРОВ!
+              </h2>
 
-            <h2 class="header invation__title">
-              ПРИГЛАШАЕМ
-              К&nbsp;СОТРУДНИЧЕСТВУ
-              ДИЛЛЕРОВ!
-            </h2>
+              <p class="invation__adress text">
+                ул. Большая
+                Конюшенная, д. 19/8
+                Санкт-Петербург
+              </p>
 
-            <p class="invation__adress text">
-              ул. Большая
-              Конюшенная, д. 19/8
-              Санкт-Петербург
-            </p>
-
+            </div>
           </div>
         </div>
 
