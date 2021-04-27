@@ -2,14 +2,23 @@
   position: relative;
 }
 
+.contacts__container {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 100%;
+  }
+}
+
 .contacts__invation {
   @media (min-width: @desktop-width) {
     box-sizing: border-box;
     position: absolute;
     z-index: 2;
-    top: 95px;
-    left: 110px;
+    top: 50%;
+    transform: translateY(-50%);
     width: 570px;
-    height: 201px;
   }
 }
