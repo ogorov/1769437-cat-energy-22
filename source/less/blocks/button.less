@@ -1,6 +1,5 @@
 .button {
   border: none;
-  height: 40px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: @regular;
   font-size: 14px;
@@ -10,8 +9,13 @@
   display: inline-block;
   box-sizing: border-box;
   text-align: center;
-  padding: 11px 5px;
+  height: 40px;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .button--green {

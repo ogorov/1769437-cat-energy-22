@@ -1,6 +1,78 @@
 .promo {
-  background: linear-gradient(fade(@base-green, 85%), fade(@base-green, 85%)) center top/auto 60% no-repeat, url("/img/cat-background.png") center top/auto 60% no-repeat;
-  padding: 20px;
+  position: relative;
+  overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    box-sizing: border-box;
+    background: none;
+    height: 950px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 696px;
+  }
+}
+
+.promo__container {
+  position: relative;
+  height: 100%;
+}
+
+.promo__wrapper {
+  width: 100%;
+  height: 100%;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 117px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    top: 220px;
+    left: 80px;
+    height: unset;
+    width: unset;
+  }
+}
+
+.promo__background-image {
+  background: no-repeat url("/img/cat-background.jpeg");
+  background-size: 180%;
+  background-position: 60% 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -3;
+  width: 100%;
+  height: 63%;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: fade(@base-green, 85%);
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    top: 0;
+    left: 50%;
+    background-size: auto 100%;
+    background-position: 0 0;
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .promo__main-header {
@@ -9,6 +81,14 @@
   color: @white;
   width: 100%;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: @black;
+    text-align: left;
+    width: 414px;
+  }
 }
 
 .promo__sub-header {
@@ -18,13 +98,49 @@
   width: 100%;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    color: @black;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    width: 283px;
+  }
 }
 
 .promo__img-jar {
   width: 100%;
   height: auto;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    max-width: 800px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 368px;
+    top: -82px;
+    width: 552px;
+    height: 499px;
+    transform: none;
+  }
 }
 
 .promo__button {
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 244px;
+    height: 54px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 244px;
+  }
 }
