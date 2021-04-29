@@ -53,12 +53,15 @@
   padding-right: 0;
 
   &--border {
+    margin: 0 -@padding-mobile;
+    padding: 0 @padding-mobile;
     border-left: none;
     border-right: none;
     border-top: solid @light-grey 1px;
     border-bottom: solid @light-grey 1px;
 
     @media (min-width: @tablet-width) {
+      margin: 0;
       border: solid @light-grey 1px;
       padding: 30px;
     }
