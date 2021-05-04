@@ -1,4 +1,24 @@
 .logo-img {
   width: 33px;
   height: 38px;
+
+  @media (min-width: @tablet-width) {
+    width: 174px;
+    height: 52px;
+    content: url("/img/logo-img-tablet.svg");
+
+    &:hover {
+      opacity: 80%;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
+    height: 59px;
+    content: url("/img/logo-img-desktop.svg");
+
+    &:hover {
+      opacity: 60%;
+    }
+  }
 }

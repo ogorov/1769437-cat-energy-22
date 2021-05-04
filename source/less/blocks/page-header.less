@@ -1,10 +1,17 @@
 .page-header {
   width: 100%;
 
+  @media (min-width: @tablet-width) {
+    padding-top: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 54px;
+  }
+
   &--index {
     @media (min-width: @desktop-width) {
       position: absolute;
-      top: 50px;
       z-index: 3;
     }
   }
@@ -17,6 +24,7 @@
     padding: 0 @padding-tablet;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: @desktop-width) {
@@ -67,6 +75,11 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
+    width: 440px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 478px;
   }
 }
 
@@ -77,12 +90,13 @@
 
   @media (min-width: @tablet-width) {
     border: none;
+    padding: 0;
   }
 }
 
 .page-header__page-link {
   text-decoration: none;
-  color: black;
+  color: @black;
   font-size: 20px;
   line-height: 20px;
   font-weight: @medium;
@@ -91,15 +105,37 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: @regular;
+
+    &--active {
+      border-bottom: 2px solid @base-green;
+    }
+
+    &:hover {
+      color: fade(@black, 60%);
+    }
+
+    &:active {
+      color: fade(@black, 30%);
+    }
   }
 
   @media (min-width: @desktop-width) {
     font-size: 20px;
-  }
 
-  &--index {
-    @media (min-width: @desktop-width) {
+    &--index {
       color: @white;
+    }
+
+    &--active&--index {
+      border-bottom: 2px solid @white;
+    }
+
+    &--index&:hover {
+      color: fade(@white, 60%);
+    }
+
+    &--index&:active {
+      color: fade(@black, 30%);
     }
   }
 }
