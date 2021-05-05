@@ -1,30 +1,69 @@
 .additional-catalog {
   border-top: solid @light-grey 1px;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
 }
 
 .additional-catalog__header {
   font-size: 24px;
   line-height: 24px;
-  padding: 20px;
-  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 
   // &::after {
 
   // }
 }
 
+.additional-catalog__content {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-column-gap: 80px;
+    padding: 80px 0;
+  }
+}
+
 .additional-catalog__list {
-  padding: 20px;
   list-style-type: none;
+  padding: 0;
   margin: 0;
 }
 
 .additional-catalog__item {
-  border-top: solid @light-grey 1px;
-  padding: 20px 0;
+  border-top: solid @special-grey 1px;
+  padding-bottom: 18px;
 
   &:last-child {
-    border-bottom: solid @light-grey 1px;
+    border-bottom: solid @special-grey 1px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 28px;
+    border: solid @special-grey 1px;
+
+    &:not(:last-child) {
+      border-bottom: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 16px;
+    border-left: none;
+    border-right: none;
+    border-top: solid @special-grey 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:last-child {
+      border-bottom: solid @special-grey 1px;
+    }
   }
 }
 
@@ -32,6 +71,15 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex: 1;
+  }
 }
 
 .additional-catalog__item-table {
@@ -50,20 +98,49 @@
   td:first-child + td {
     text-align: right;
   }
+
+  @media (min-width: @desktop-width) {
+    flex: 1;
+
+    td:first-child + td {
+      width: 50px;
+      text-align: left;
+    }
+  }
 }
 
 .additional-catalog__button-order {
   width: 100%;
+
+  @media (min-width: @desktop-width) {
+    flex: 1;
+  }
 }
 
 .additional-catalog__footer {
-  padding: 20px;
   height: 280px;
+  width: 100%;
+  padding: 35px 0;
   background-image: url("../../img/gift-photo.png");
   background-repeat: no-repeat;
   background-clip: content-box;
   background-position: center;
-  text-align: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    height: 200px;
+    flex-direction: row;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    height: 100%;
+    flex-direction: column;
+  }
 }
 
 .additional-catalog__img-gift {
@@ -72,7 +149,9 @@
 }
 
 .additional-catalog__order-all-text {
+  text-align: center;
   font-size: 16px;
   line-height: 20px;
   color: @white;
+  max-width: 161px;
 }
