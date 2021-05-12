@@ -1,26 +1,27 @@
 .page-header {
   width: 100%;
 
+  @media (min-width: @tablet-width) {
+    padding-top: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 52px;
+  }
+
   &--index {
     @media (min-width: @desktop-width) {
       position: absolute;
-      top: 50px;
       z-index: 3;
     }
   }
 }
 
 .page-header__container {
-  padding: 0;
-
   @media (min-width: @tablet-width) {
-    padding: 0 @padding-tablet;
     display: flex;
     justify-content: space-between;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding: 0 @padding-desktop;
+    align-items: center;
   }
 }
 
@@ -29,8 +30,6 @@
   justify-content: space-between;
   align-items: center;
   height: 66px;
-  padding-left: 20px;
-  padding-right: 20px;
 
   @media (min-width: @tablet-width) {
     justify-content: left;
@@ -67,22 +66,28 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
+    width: 440px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 478px;
   }
 }
 
 .page-header__menu-item {
   text-align: center;
-  padding: 20px;
+  padding: 22px;
   border-top: 1px solid @light-grey;
 
   @media (min-width: @tablet-width) {
     border: none;
+    padding: 0;
   }
 }
 
 .page-header__page-link {
   text-decoration: none;
-  color: black;
+  color: @black;
   font-size: 20px;
   line-height: 20px;
   font-weight: @medium;
@@ -91,15 +96,38 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: @regular;
+
+    &--active {
+      border-bottom: 2px solid @base-green;
+      padding-bottom: 5px;
+    }
+
+    &:hover {
+      color: fade(@black, 60%);
+    }
+
+    &:active {
+      color: fade(@black, 30%);
+    }
   }
 
   @media (min-width: @desktop-width) {
     font-size: 20px;
-  }
 
-  &--index {
-    @media (min-width: @desktop-width) {
+    &--index {
       color: @white;
+    }
+
+    &--active&--index {
+      border-bottom: 2px solid @white;
+    }
+
+    &--index&:hover {
+      color: fade(@white, 60%);
+    }
+
+    &--index&:active {
+      color: fade(@black, 30%);
     }
   }
 }

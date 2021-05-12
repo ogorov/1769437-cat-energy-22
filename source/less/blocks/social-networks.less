@@ -1,6 +1,9 @@
 .social-networks {
+  width: 130px;
+  height: 22px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 // .social-networks__item {
@@ -8,8 +11,6 @@
 // }
 
 .social-networks__icon {
-  padding: 10px;
-
   &:hover path {
     fill: @base-green;
   }
@@ -22,16 +23,31 @@
   &--vkontakte {
     height: 16px;
     width: 23px;
+
+    @media (min-width: @tablet-width) {
+      height: 22px;
+      width: 30px;
+    }
   }
 
   &--instagram {
     height: 16px;
     width: 16px;
+
+    @media (min-width: @tablet-width) {
+      height: 23px;
+      width: 33px;
+    }
   }
 
   &--facebook {
     height: 22px;
     width: 22px;
+
+    @media (min-width: @tablet-width) {
+      height: 28px;
+      width: 33px;
+    }
 
     &:hover path {
       fill: none;

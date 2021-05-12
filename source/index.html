@@ -8,6 +8,33 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Pixel Glass -->
+    <!-- <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url( "img/mock/index-320.png" );
+      }
+      /* Планшет */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "img/mock/index-768.png" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1100px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "img/mock/index-1440.png" );
+        }
+      }
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script> -->
+    <!-- // Pixel Glass -->
+
   </head>
   <body class="page__body">
 
@@ -15,7 +42,7 @@
       <div class="container page-header__container">
         <div class="page-header__main">
           <div class="page-header__logo-img">
-            <img class="logo-img" src="img/logo-img.svg" alt="">
+            <a class="logo-img logo-img--mobile" href="/"></a>
           </div>
           <div class="page-header__logo-text">
             <img class="logo-text" src="img/logo.svg" alt="">
@@ -64,29 +91,29 @@
 
         <div class="container cases__container">
           <div class="cases__item">
-            <div class="cases__item-header">
-              <img class="cases__img cases__img--slim" src="img/cat_slim.svg" alt="">
-              <h2 class="header cases__title">ПОХУДЕНИЕ</h2>
-            </div>
+            <img class="cases__img cases__img--slim" src="img/cat_slim.svg" alt="">
+            <h2 class="header cases__title">ПОХУДЕНИЕ</h2>
 
             <p class="cases__text text">
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
 
-            <a href="" class="cases__link">КАТАЛОГ SLIM</a>
+            <div class="cases__item-footer">
+              <a href="" class="cases__link">КАТАЛОГ SLIM</a>
+            </div>
           </div>
 
           <div class="cases__item">
-            <div class="cases__item-header">
-              <img class="cases__img cases__img--mass" src="img/cat_mass.svg" alt="">
-              <h2 class="header cases__title">НАБОР МАССЫ</h2>
-            </div>
+            <img class="cases__img cases__img--mass" src="img/cat_mass.svg" alt="">
+            <h2 class="header cases__title">НАБОР МАССЫ</h2>
 
             <p class="cases__text text">
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
 
-            <a href="" class="cases__link">КАТАЛОГ PRO</a>
+            <div class="cases__item-footer">
+              <a href="" class="cases__link">КАТАЛОГ PRO</a>
+            </div>
           </div>
         </div>
 
@@ -100,43 +127,35 @@
           <ul class="how-it-works__list">
 
             <li class="how-it-works__item">
-              <div class="how-it-works__item-wrapper">
-                <img class="how-it-works__icon" src="img/how_it_works_1.svg" alt="">
-                <span class="how-it-works__text text">
-                  Функциональное питание содержит только полезные питательные вещества.
-                </span>
-                <p class="how-it-works__background-text">1</p>
-              </div>
+              <img class="how-it-works__icon" src="img/how_it_works_1.svg" alt="">
+              <span class="how-it-works__text text">
+                Функциональное питание содержит только полезные питательные вещества.
+              </span>
+              <span class="how-it-works__background-text">1</span>
             </li>
 
             <li class="how-it-works__item">
-              <div class="how-it-works__item-wrapper">
-                <img class="how-it-works__icon" src="img/how_it_works_2.svg" alt="">
-                <span class="how-it-works__text text">
-                  Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
-                </span>
-                <p class="how-it-works__background-text">2</p>
-              </div>
+              <img class="how-it-works__icon" src="img/how_it_works_2.svg" alt="">
+              <span class="how-it-works__text text">
+                Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+              </span>
+              <p class="how-it-works__background-text">2</p>
             </li>
 
             <li class="how-it-works__item">
-              <div class="how-it-works__item-wrapper">
-                <img class="how-it-works__icon" src="img/how_it_works_3.svg" alt="">
-                <span class="how-it-works__text text">
-                  Замените один-два приема обычной еды на наше функциональное питание.
-                </span>
-                <p class="how-it-works__background-text">3</p>
-              </div>
+              <img class="how-it-works__icon" src="img/how_it_works_3.svg" alt="">
+              <span class="how-it-works__text text">
+                Замените один-два приема обычной еды на наше функциональное питание.
+              </span>
+              <p class="how-it-works__background-text">3</p>
             </li>
 
             <li class="how-it-works__item">
-              <div class="how-it-works__item-wrapper">
-                <img class="how-it-works__icon" src="img/how_it_works_4.svg" alt="">
-                <span class="how-it-works__text text">
-                  Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
-                </span>
-                <p class="how-it-works__background-text">4</p>
-              </div>
+              <img class="how-it-works__icon" src="img/how_it_works_4.svg" alt="">
+              <span class="how-it-works__text text">
+                Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+              </span>
+              <p class="how-it-works__background-text">4</p>
             </li>
 
           </ul>
@@ -167,12 +186,15 @@
 
                 <div class="life-example__params-item">
                   <p class="life-example__main-stat">60 ДНЕЙ</p>
-                  <p class="life-example__comment text">затрачено время</p>
+                  <p class="life-example__comment text">затрачено времени</p>
                 </div>
 
               </div>
 
-              <p class="life-example__stats-cost">ЗАТРАТЫ НА ПИТАНИЕ: 15 000 РУБ.</p>
+              <p class="life-example__stats-cost">
+                <span>ЗАТРАТЫ НА ПИТАНИЕ: </span>
+                <span>15 000 РУБ.</span>
+              </p>
 
             </div>
 
@@ -185,7 +207,7 @@
               <img class="life-example__image life-example__image--after" src="img/after.png" alt="">
             </div>
 
-            <div class="life-example__footer slider">
+            <div class="life-example__slider slider">
               <span class="slider__left slider__text">Было</span>
               <input type="range" class="slider__range">
               <span class="slider__right slider__text">Стало</span>
@@ -197,27 +219,29 @@
       </section>
 
       <section class="contacts">
+        <div class="contacts__wrapper">
+          <div class="container contacts__container">
+            <div class="contacts__invation invation">
 
-        <div class="container contacts__container">
-          <div class="contacts__invation invation">
+              <h2 class="header invation__title">
+                ПРИГЛАШАЕМ
+                К&nbsp;СОТРУДНИЧЕСТВУ
+                ДИЛЛЕРОВ!
+              </h2>
 
-            <h2 class="header invation__title">
-              ПРИГЛАШАЕМ
-              К&nbsp;СОТРУДНИЧЕСТВУ
-              ДИЛЛЕРОВ!
-            </h2>
+              <p class="invation__adress text">
+                ул. Большая
+                Конюшенная, д. 19/8
+                <br><br>
+                Санкт-Петербург
+              </p>
 
-            <p class="invation__adress text">
-              ул. Большая
-              Конюшенная, д. 19/8
-              Санкт-Петербург
-            </p>
-
+            </div>
           </div>
         </div>
 
         <div class="map">
-
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1620260062262!5m2!1sru!2sru" style="overflow:hidden;height:100%;width:100%;border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
 
       </section>
@@ -228,7 +252,7 @@
 
       <div class="container page-footer__container">
         <div class="page-footer__logo">
-          <img class="logo logo--footer" src="img/logo.svg" alt="">
+          <img class="logo-text logo-text--footer" src="img/logo.svg" alt="">
         </div>
 
         <div class="page-footer__social-networks">
