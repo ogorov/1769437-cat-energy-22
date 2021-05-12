@@ -90,30 +90,40 @@
             <div class="form__main-block">
               <fieldset class="form__block">
 
-                <label class="form__label form__label--light">
+                <label class="form__label form__label--light form__label--text">
                   ИМЯ:* <input class="form__input form__input--text" type="text" name="cat_name" placeholder="Барсик">
                 </label>
 
-                <label class="form__label form__label--light">
+                <label class="form__label form__label--light form__label--text">
                   Вес&nbsp;(кг):* <input class="form__input form__input--text" type="text" name="cat_weight" placeholder="7">
                 </label>
 
-                <label class="form__label form__label--light">
+                <label class="form__label form__label--light form__label--text">
                   Возраст&nbsp;(лет): <input class="form__input form__input--text" type="text" name="cat_age" placeholder="7">
                 </label>
 
               </fieldset>
 
               <fieldset class="form__block form__block--border">
-                <label class="form__label form__label--dark"> <input class="form__input form__input--radio" type="radio" name="program" value="email"> Похудение </label>
-                <label class="form__label form__label--dark"> <input class="form__input form__input--radio" type="radio" name="program" value="email"> Набор массы </label>
-                <label class="form__label form__label--dark"> <input class="form__input form__input--radio" type="radio" name="program" value="email"> Не знаю (Нужен ваш совет) </label>
+
+                <label class="form__label form__label--dark form__label--radio">
+                  <input class="form__input form__input--radio" type="radio" name="program" value="email"> Похудение
+                </label>
+
+                <label class="form__label form__label--dark form__label--radio">
+                  <input class="form__input form__input--radio" type="radio" name="program" value="email"> Набор массы
+                </label>
+
+                <label class="form__label form__label--dark form__label--radio">
+                  <input class="form__input form__input--radio" type="radio" name="program" value="email"> Не знаю (Нужен ваш совет)
+                </label>
+
               </fieldset>
             </div>
           </div>
 
           <div class="container">
-            <fieldset class="form__block">
+            <fieldset class="form__block form__block--with-legend">
 
               <legend class="form__legend">
                 Контактные данные
@@ -134,7 +144,7 @@
           </div>
 
           <div class="container">
-            <fieldset class="form__block">
+            <fieldset class="form__block form__block--with-legend">
 
               <legend class="form__legend">Комментарий</legend>
 
@@ -146,7 +156,7 @@
           </div>
 
           <div class="container">
-            <fieldset class="form__block">
+            <fieldset class="form__block form__block--with-legend">
 
               <legend class="form__legend"><span>Дополнительно</span></legend>
 

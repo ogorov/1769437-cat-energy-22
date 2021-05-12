@@ -23,7 +23,7 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  margin: 37px 0;
+  margin: 37px 0 0 0;
 
   @media (min-width: @tablet-width) {
     margin: 54px 0 64px 0;
@@ -47,10 +47,12 @@
 .form__block {
   border: none;
   padding: 0;
+  padding-bottom: 23px;
 
   &--border {
-    margin: 0 -@padding-mobile;
-    padding: 0 @padding-mobile;
+    margin-left: -@padding-mobile;
+    margin-right: -@padding-mobile;
+    padding: 9px @padding-mobile 16px @padding-mobile;
     border-left: none;
     border-right: none;
     border-top: solid @light-grey 1px;
@@ -61,6 +63,10 @@
       border: solid @light-grey 1px;
       padding: 30px;
     }
+  }
+
+  &--with-legend {
+    padding: 0;
   }
 
   @media (min-width: @tablet-width) {
@@ -99,7 +105,11 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  margin: 10px 0;
+  margin-top: 17px;
+
+  &--radio {
+    margin-top: 12px;
+  }
 
   &--light {
     color: @dark-grey;
@@ -130,8 +140,9 @@
   }
 
   &--big-text {
-    height: 150px;
+    height: 126px;
     width: 100%;
+    padding: 10px;
 
     @media (min-width: @tablet-width) {
       height: 174px;
@@ -139,7 +150,7 @@
   }
 
   &--radio {
-    margin-right: @margin;
+    margin: 1px @margin 1px 0;
     background-color: @white;
     border: 1px solid @black;
     width: 30px;
@@ -148,8 +159,8 @@
   }
 
   &--checkbox {
-    width: 40px;
-    height: 40px;
+    width: 26px;
+    height: 26px;
     margin-right: @margin;
   }
 
@@ -164,7 +175,7 @@
   line-height: 26px;
   position: relative;
   width: 100%;
-  padding: 25px 0 35px 0;
+  padding: 26px 0 20px 0;
   // display: flex;
   // align-items: center;
 
@@ -194,7 +205,7 @@
 }
 
 .form__footer {
-  padding: 34px 0;
+  padding: 33px 0 13px 0;
 
   @media (min-width: @tablet-width) {
     padding: 54px 0 72px 0;
