@@ -246,7 +246,7 @@
   font-size: 24px;
   line-height: 26px;
   position: relative;
-  // width: 100vw;
+  width: 100%;
   padding: 26px 0 20px 0;
   margin: 0 -@padding-mobile;
   padding: 26px @padding-mobile 20px @padding-mobile;
@@ -269,13 +269,13 @@
     position: absolute;
     top: 42px;
     height: 0;
-    width: 50%;
     z-index: -1;
   }
 
   &::before {
     left: 0;
     display: none;
+    width: 30%;
 
     @media (min-width: @tablet-width) {
       display: block;
@@ -284,13 +284,16 @@
 
   &::after {
     right: 0;
+    width: 60%;
   }
 }
 
-// .form__legend-text{
-//   background-color: @white;
-//   padding-right: 42px;
-// }
+.form__legend-text{
+  background-color: @white;
+  padding: 0 42px;
+  margin-left: -42px;
+  display: block;
+}
 
 .form__footer {
   padding: 33px 0 13px 0;
