@@ -8,6 +8,33 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url( "img/mock/catalog-320.png" );
+      }
+      /* Планшет */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "img/mock/catalog-768.png" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1100px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "img/mock/catalog-1440.png" );
+        }
+      }
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
+
   </head>
   <body class="page__body">
 
@@ -15,7 +42,7 @@
       <div class="container page-header__container">
         <div class="page-header__main">
           <div class="page-header__logo-img">
-            <img class="logo-img" src="img/logo-img.svg" alt="">
+            <a class="logo-img logo-img--mobile" href="/"></a>
           </div>
           <div class="page-header__logo-text">
             <img class="logo-text" src="img/logo.svg" alt="">
@@ -31,10 +58,10 @@
             <a class="page-header__page-link" href="/">ГЛАВНАЯ</a>
           </li>
           <li class="page-header__menu-item">
-            <a class="page-header__page-link" href="/catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
+            <a class="page-header__page-link page-header__page-link--active" href="/catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
           </li>
           <li class="page-header__menu-item">
-            <a class="page-header__page-link page-header__page-link--active" href="/form.html">ПОДБОР ПРОГРАММЫ</a>
+            <a class="page-header__page-link" href="/form.html">ПОДБОР ПРОГРАММЫ</a>
           </li>
         </ul>
       </div>
@@ -402,6 +429,7 @@
               <p class="invation__adress text">
                 ул. Большая
                 Конюшенная, д. 19/8
+                <br><br>
                 Санкт-Петербург
               </p>
 
@@ -410,7 +438,7 @@
         </div>
 
         <div class="map">
-
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1620260062262!5m2!1sru!2sru" style="overflow:hidden;height:100%;width:100%;border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
 
       </section>
@@ -421,7 +449,7 @@
 
       <div class="container page-footer__container">
         <div class="page-footer__logo">
-          <img class="logo logo--footer" src="img/logo.svg" alt="">
+          <img class="logo-text logo-text--footer" src="img/logo.svg" alt="">
         </div>
 
         <div class="page-footer__social-networks">
