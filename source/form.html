@@ -8,6 +8,33 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url( "img/mock/form-320.png" );
+      }
+      /* Планшет */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "img/mock/form-768.png" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1100px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "img/mock/form-1440.png" );
+        }
+      }
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
+
   </head>
   <body class="page__body">
 
@@ -15,7 +42,7 @@
       <div class="container page-header__container">
         <div class="page-header__main">
           <div class="page-header__logo-img">
-            <img class="logo-img" src="img/logo-img.svg" alt="">
+            <a class="logo-img logo-img--mobile" href="/"></a>
           </div>
           <div class="page-header__logo-text">
             <img class="logo-text" src="img/logo.svg" alt="">
@@ -63,34 +90,49 @@
             <div class="form__main-block">
               <fieldset class="form__block">
 
-                <label class="form__label form__label--light">
+                <label class="form__label form__label--light form__label--text">
                   ИМЯ:* <input class="form__input form__input--text" type="text" name="cat_name" placeholder="Барсик">
                 </label>
 
-                <label class="form__label form__label--light">
-                  Вес (кг):* <input class="form__input form__input--text" type="text" name="cat_weight" placeholder="7">
+                <label class="form__label form__label--light form__label--text">
+                  Вес&nbsp;(кг):* <input class="form__input form__input--text" type="text" name="cat_weight" placeholder="7">
                 </label>
 
-                <label class="form__label form__label--light">
-                  Возраст (лет): <input class="form__input form__input--text" type="text" name="cat_age" placeholder="7">
+                <label class="form__label form__label--light form__label--text">
+                  Возраст&nbsp;(лет): <input class="form__input form__input--text" type="text" name="cat_age" placeholder="7">
                 </label>
 
               </fieldset>
 
               <fieldset class="form__block form__block--border">
-                <label class="form__label form__label--dark"> <input class="form__input form__input--radio" type="radio" name="program" value="email"> Похудение </label>
-                <label class="form__label form__label--dark"> <input class="form__input form__input--radio" type="radio" name="program" value="email"> Набор массы </label>
-                <label class="form__label form__label--dark"> <input class="form__input form__input--radio" type="radio" name="program" value="email"> Не знаю (Нужен ваш совет) </label>
+
+                <label class="form__label form__label--dark form__label--radio">
+                  <input class="form__input form__input--radio" type="radio" name="program" value="email">
+                  <span class="form__radio"></span>
+                  Похудение
+                </label>
+
+                <label class="form__label form__label--dark form__label--radio">
+                  <input class="form__input form__input--radio" type="radio" name="program" value="email">
+                  <span class="form__radio"></span>
+                  Набор массы
+                </label>
+
+                <label class="form__label form__label--dark form__label--radio">
+                  <input class="form__input form__input--radio" type="radio" name="program" value="email">
+                  <span class="form__radio"></span>
+                  Не знаю (Нужен ваш совет)
+                </label>
+
               </fieldset>
             </div>
           </div>
 
           <div class="container">
-            <fieldset class="form__block">
+            <fieldset class="form__block form__block--with-legend">
 
               <legend class="form__legend">
-                Контактные данные
-                (владельца кота)
+                <span class="form__legend-text">Контактные данные (владельца кота)</span>
               </legend>
 
               <div class="form__block-contacts">
@@ -107,11 +149,13 @@
           </div>
 
           <div class="container">
-            <fieldset class="form__block">
+            <fieldset class="form__block form__block--with-legend">
 
-              <legend class="form__legend">Комментарий</legend>
+              <legend class="form__legend">
+                <span class="form__legend-text">Комментарий</span>
+              </legend>
 
-              <label class="form__label">
+              <label class="form__label form__label--big-text">
                 <textarea class="form__input form__input--big-text" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
               </label>
 
@@ -119,25 +163,35 @@
           </div>
 
           <div class="container">
-            <fieldset class="form__block">
+            <fieldset class="form__block form__block--with-legend">
 
-              <legend class="form__legend"><span>Дополнительно</span></legend>
+              <legend class="form__legend">
+                <span class="form__legend-text">Дополнительно</span>
+              </legend>
 
               <div class="form__block-additional">
-                <label class="form__label form__label--dark">
-                  <input class="form__input form__input--checkbox" type="checkbox" name="sugar_substitute"> сахарозаменитель
+                <label class="form__label form__label--dark form__label--checkbox">
+                  <input class="form__input form__input--checkbox" type="checkbox" name="sugar_substitute">
+                  <span class="form__checkbox"></span>
+                  сахарозаменитель
                 </label>
 
-                <label class="form__label form__label--dark">
-                  <input class="form__input form__input--checkbox" type="checkbox" name="water"> питьевая вода
+                <label class="form__label form__label--dark form__label--checkbox">
+                  <input class="form__input form__input--checkbox" type="checkbox" name="water">
+                  <span class="form__checkbox"></span>
+                  питьевая вода
                 </label>
 
-                <label class="form__label form__label--dark">
-                  <input class="form__input form__input--checkbox" type="checkbox" name="milk"> молоко
+                <label class="form__label form__label--dark form__label--checkbox">
+                  <input class="form__input form__input--checkbox" type="checkbox" name="milk">
+                  <span class="form__checkbox"></span>
+                  молоко
                 </label>
 
-                <label class="form__label form__label--dark">
-                  <input class="form__input form__input--checkbox" type="checkbox" name="vitamins"> витамины
+                <label class="form__label form__label--dark form__label--checkbox">
+                  <input class="form__input form__input--checkbox" type="checkbox" name="vitamins">
+                  <span class="form__checkbox"></span>
+                  витамины
                 </label>
               </div>
 
@@ -149,7 +203,7 @@
             <div class="form__footer form__block">
               <input class="form__submit button button--green" type="submit" value="отправить заявку">
 
-              <span class="form__remark">* — Обязательные поля</span>
+              <p class="form__remark">* — Обязательные поля</p>
             </div>
 
           </div>
@@ -172,6 +226,7 @@
               <p class="invation__adress text">
                 ул. Большая
                 Конюшенная, д. 19/8
+                <br><br>
                 Санкт-Петербург
               </p>
 
@@ -180,7 +235,7 @@
         </div>
 
         <div class="map">
-
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1620260062262!5m2!1sru!2sru" style="overflow:hidden;height:100%;width:100%;border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
 
       </section>
@@ -190,7 +245,7 @@
 
       <div class="container page-footer__container">
         <div class="page-footer__logo">
-          <img class="logo logo--footer" src="img/logo.svg" alt="">
+          <img class="logo-text logo-text--footer" src="img/logo.svg" alt="">
         </div>
 
         <div class="page-footer__social-networks">
