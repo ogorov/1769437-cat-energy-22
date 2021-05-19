@@ -8,33 +8,6 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Pixel Glass -->
-    <style>
-      HTML {
-        background-repeat: no-repeat;
-        background-position:  50% 0;
-        /* По умолчанию показывается мобильный макет */
-        background-image: url( "img/mock/catalog-320.png" );
-      }
-      /* Планшет */
-      @media ( min-width: 768px ) {
-        HTML {
-          /* Планшетный макет */
-          background-image: url( "img/mock/catalog-768.png" );
-        }
-      }
-      /* Десктоп */
-      @media ( min-width: 1100px ) {
-        HTML {
-          /* Десктопный макет */
-          background-image: url( "img/mock/catalog-1440.png" );
-        }
-      }
-    </style>
-    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-    <script src="../node_modules/pixel-glass/script.js"></script>
-    <!-- // Pixel Glass -->
-
   </head>
   <body class="page__body">
 
@@ -323,13 +296,11 @@
             </li>
 
             <li class="catalog__item catalog__footer">
-              <div class="catalog__item-wrapper">
                 <img class="catalog__img-plus" src="img/plus.svg" alt="">
                 <h2 class="header catalog__footer-title">Показать еще 100500 товаров</h2>
                 <span class="catalog__footer-text text">На самом деле вкусов гораздо больше!</span>
 
                 <a class="catalog__footer-button button button--link button--grey" href="">ПОКАЗАТЬ ВСЕ</a>
-              </div>
             </li>
 
           </ul>
@@ -406,7 +377,7 @@
               <img class="additional-catalog__img-gift" src="img/icon_gift.svg" alt="">
               <span class="additional-catalog__order-all-text text">
                 Закажите все
-                и получите чехол для
+                и&nbsp;получите чехол для
                 кота в подарок!
               </span>
             </div>
