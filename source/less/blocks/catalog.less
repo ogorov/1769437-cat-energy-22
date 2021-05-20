@@ -12,6 +12,11 @@
     line-height: 60px;
     margin-top: 55px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 70px;
+    margin-bottom: 47px;
+  }
 }
 
 .catalog__list {
@@ -29,6 +34,7 @@
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 80px;
+    grid-row-gap: 43px;
   }
 }
 
@@ -102,8 +108,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    font-size: 20px;
-    line-height: 21px;
+    margin-top: 53px;
   }
 }
 
@@ -153,6 +158,7 @@
 
 .catalog__footer {
   background-color: @white;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     display: flex;
