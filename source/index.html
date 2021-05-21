@@ -8,6 +8,9 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="icon" href="img/favicon-16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+
   </head>
   <body class="page__body">
 
@@ -52,7 +55,11 @@
               питание для котов
             </h1>
             <h2 class="header promo__sub-header">ЗАНЯЛСЯ СОБОЙ? ЗАЙМИСЬ КОТОМ!</h2>
-            <img class="promo__img-jar" src="img/cat_energy_jar.png" alt="">
+            <picture>
+              <source media="(min-width: 1100px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x">
+              <source media="(min-width: 760px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x">
+              <img class="promo__img-jar" src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x" alt="">
+            </picture>
             <button class="promo__button button button--green">ПОДОБРАТЬ ПРОГРАММУ</button>
           </div>
         </div>
