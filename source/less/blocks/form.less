@@ -112,6 +112,7 @@
 }
 
 .form__label {
+  position: relative;
   display: flex;
   align-items: center;
   font-size: 16px;
@@ -162,6 +163,23 @@
   line-height: 18px;
   color: @dark-grey;
   text-transform: uppercase;
+  border: 1px solid @very-light-grey;
+
+  &:hover {
+    border: 1px solid @dark-grey;
+  }
+
+  &:focus {
+    border: 2px solid @dark-grey;
+  }
+
+  &:invalid {
+    border: 2px solid @pink;
+  }
+
+  &:disabled {
+    opacity: 30%;
+  }
 
   &--text {
     flex: 1;
@@ -185,13 +203,51 @@
     position: absolute;
   }
 
-  &:disabled {
-    opacity: 30%;
-  }
-
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.form__input-sprite {
+  position: absolute;
+
+  &--email {
+    right: 10px;
+    top: 12px;
+    stroke: @black-grey;
+
+    @media (min-width: @tablet-width) {
+      right: 15px;
+      top: 20px;
+    }
+
+    .form__input:focus + & {
+      stroke: @base-green;
+    }
+
+    .form__input:invalid + & {
+      stroke: @pink;
+    }
+  }
+
+  &--phone {
+    right: 10px;
+    top: 11px;
+    fill: @black-grey;
+
+    @media (min-width: @tablet-width) {
+      right: 15px;
+      top: 15px;
+    }
+
+    .form__input:focus + & {
+      fill: @base-green;
+    }
+
+    .form__input:invalid + & {
+      fill: @pink;
+    }
   }
 }
 
