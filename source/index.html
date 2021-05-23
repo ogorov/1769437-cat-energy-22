@@ -6,7 +6,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
 
-    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/app.min.js"></script>
 
     <link rel="icon" href="img/favicon-16.png" sizes="16x16" type="image/png">
     <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
@@ -24,12 +25,13 @@
             <img class="logo-text" src="img/logo.svg" alt="">
           </div>
 
-          <button class="page-header__burger">
-            <img src="img/burger.svg" alt="">
+          <button class="page-header__burger" id="burger">
+            <img id="burger-img" src="img/burger.svg" alt="" hidden>
+            <img id="cross-img" src="img/cross.svg" alt="" hidden>
           </button>
         </div>
 
-        <ul  class="page-header__menu">
+        <ul class="page-header__menu" id="menu">
           <li class="page-header__menu-item">
             <a class="page-header__page-link page-header__page-link--index page-header__page-link--active" href="/">ГЛАВНАЯ</a>
           </li>
