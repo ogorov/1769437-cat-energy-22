@@ -3,8 +3,6 @@ window.onload = function() {
   let burger = document.getElementById("burger-img");
   let cross = document.getElementById("cross-img");
 
-  console.log(menu);
-
   menu.hidden = true;
   burger.hidden = false;
 
