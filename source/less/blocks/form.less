@@ -75,6 +75,30 @@
 
   &--with-legend {
     padding: 0;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0%;
+      height: 2px;
+      width: 100%;
+      background-color: @base-green;
+    }
+
+    &::before {
+      left: -103%;
+      display: none;
+
+      @media (min-width: @tablet-width) {
+        display: block;
+      }
+    }
+
+    &::after {
+      right: -100%;
+    }
 
     @media (min-width: @desktop-width) {
       padding-bottom: 23px;
@@ -215,6 +239,7 @@
   &--email {
     right: 10px;
     top: 12px;
+    fill: none;
     stroke: @black-grey;
 
     @media (min-width: @tablet-width) {
@@ -304,52 +329,48 @@
   line-height: 26px;
   position: relative;
   width: 100%;
-  margin: 0 -@padding-mobile;
-  padding: 26px @padding-mobile 20px @padding-mobile;
+  padding: 26px 0 20px 0;
 
   @media (min-width: @tablet-width) {
-    margin: 0 -@padding-tablet;
-    padding: 44px @padding-tablet 54px @padding-tablet;
+    padding: 48px 0 54px 0;
     font-size: 36px;
     line-height: 36px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 -@padding-desktop;
-    padding: 23px @padding-desktop 54px @padding-desktop;
-  }
-
-  &::before,
-  &::after {
-    content: "";
-    border-top: solid @base-green 2px;
-    position: absolute;
-    top: 42px;
-    height: 0;
-    z-index: -1;
+    padding: 23px 0 54px 0;
   }
 
   &::before {
+    content: "";
+    position: absolute;
+    top: 42px;
     left: 0;
-    display: none;
-    width: 30%;
+    height: 2px;
+    width: 100%;
+    background-color: @base-green;
+    z-index: -1;
 
     @media (min-width: @tablet-width) {
-      display: block;
+      top: 68px;
     }
-  }
 
-  &::after {
-    right: 0;
-    width: 60%;
+    @media (min-width: @desktop-width) {
+      top: 42px;
+    }
   }
 }
 
 .form__legend-text {
   background-color: @white;
-  padding: 0 42px;
-  margin-left: -42px;
-  display: block;
+  padding-right: 42px;
+  display: inline-block;
+}
+
+.form__legend-temp-br {
+  @media (min-width: 600px) {
+    display: none;
+  }
 }
 
 .form__footer {
