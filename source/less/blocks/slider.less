@@ -35,7 +35,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    box-sizing: border-box;
+    padding: 0 5px;
   }
 }
 
@@ -66,5 +66,9 @@
     &:active&::-webkit-slider-thumb {
       box-shadow: 0 0 0 1px @base-green, 0 4px 2px 0 @special-grey;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 17px;
   }
 }

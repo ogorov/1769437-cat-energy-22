@@ -12,10 +12,10 @@
     <link rel="icon" href="img/favicon-16.png" sizes="16x16" type="image/png">
     <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
 
-    <link rel="preload" href="fonts/oswaldmedium.woff" type="font">
-    <link rel="preload" href="fonts/oswaldmedium.woff2" type="font">
-    <link rel="preload" href="fonts/oswaldregular.woff" type="font">
-    <link rel="preload" href="fonts/oswaldregular.woff2" type="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
 
   </head>
   <body class="page__body">
@@ -23,9 +23,15 @@
     <header class="page-header page-header--index">
       <div class="container page-header__container">
         <div class="page-header__main">
-          <div class="page-header__logo-img">
-            <a class="logo-img logo-img--mobile" href="/"></a>
-          </div>
+
+          <a class="page-header__logo-img" href="/">
+            <picture>
+              <source media="(min-width: 1100px)" srcset="img/logo-img-desktop.svg">
+              <source media="(min-width: 760px)" srcset="img/logo-img-tablet.svg">
+              <img class="logo-img logo-img--mobile" src="img/logo-img-mobile.svg" alt="">
+            </picture>
+          </a>
+
           <div class="page-header__logo-text">
             <img class="logo-text" src="img/logo.svg" alt="">
           </div>
@@ -99,7 +105,7 @@
             <h2 class="header cases__title">НАБОР МАССЫ</h2>
 
             <p class="cases__text text">
-              Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+              Заработать авторитет среди дворовых котов и&nbsp;даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
 
             <div class="cases__item-footer">
@@ -163,7 +169,7 @@
 
             <p class="life-example__text text">
               Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
-              При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+              При этом он не менял своих привычек и по&#8209;прежнему спит по 16 часов в день.
             </p>
 
             <div class="life-example__stats">
@@ -217,7 +223,7 @@
               <h2 class="header invation__title">
                 ПРИГЛАШАЕМ
                 К&nbsp;СОТРУДНИЧЕСТВУ
-                ДИЛЛЕРОВ!
+                ДИЛЕРОВ!
               </h2>
 
               <p class="invation__adress text">
