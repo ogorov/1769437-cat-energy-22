@@ -1,11 +1,3 @@
-// .form {
-
-// }
-
-// .form__header {
-
-// }
-
 .form__main-header {
   font-size: 36px;
   line-height: 36px;
@@ -258,14 +250,6 @@
       right: 15px;
       top: 20px;
     }
-
-    .form__input:focus + & {
-      stroke: @base-green;
-    }
-
-    .form__input:invalid + & {
-      stroke: @pink;
-    }
   }
 
   &--phone {
@@ -277,15 +261,23 @@
       right: 15px;
       top: 15px;
     }
-
-    .form__input:focus + & {
-      fill: @base-green;
-    }
-
-    .form__input:invalid + & {
-      fill: @pink;
-    }
   }
+}
+
+.form__input:focus + .form__input-sprite--email {
+  stroke: @base-green;
+}
+
+.form__input:invalid + .form__input-sprite--email {
+  stroke: @pink;
+}
+
+.form__input:focus + .form__input-sprite--phone {
+  fill: @base-green;
+}
+
+.form__input:invalid + .form__input-sprite--phone {
+  fill: @pink;
 }
 
 .form__radio {
