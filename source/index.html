@@ -24,21 +24,21 @@
       <div class="container page-header__container">
         <div class="page-header__main">
 
-          <a class="page-header__logo-img" href="/">
+          <div class="page-header__logo-img">
             <picture>
               <source media="(min-width: 1100px)" srcset="img/logo-img-desktop.svg">
               <source media="(min-width: 760px)" srcset="img/logo-img-tablet.svg">
-              <img class="logo-img logo-img--mobile" src="img/logo-img-mobile.svg" alt="">
+              <img width="34" height="38" class="logo-img logo-img--mobile" src="img/logo-img-mobile.svg" alt="">
             </picture>
-          </a>
+          </div>
 
           <div class="page-header__logo-text">
-            <img class="logo-text" src="img/logo.svg" alt="">
+            <img width="101" height="18" class="logo-text" src="img/logo.svg" alt="">
           </div>
 
           <button class="page-header__burger" id="burger">
-            <img id="burger-img" src="img/burger.svg" alt="" hidden>
-            <img id="cross-img" src="img/cross.svg" alt="" hidden>
+            <img width="24" height="18" id="burger-img" src="img/burger.svg" alt="" hidden>
+            <img width="20" height="20" id="cross-img" src="img/cross.svg" alt="" hidden>
           </button>
         </div>
 
@@ -77,7 +77,7 @@
               <source media="(min-width: 760px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x">
               <img class="promo__img-jar" src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x" alt="">
             </picture>
-            <button class="promo__button button button--green">ПОДОБРАТЬ ПРОГРАММУ</button>
+            <a class="button button--link button--green promo__button" href="/form.html">ПОДОБРАТЬ ПРОГРАММУ</a>
           </div>
         </div>
         <div class="promo__background-image"></div>
@@ -88,7 +88,7 @@
 
         <div class="container cases__container">
           <div class="cases__item">
-            <img class="cases__img cases__img--slim" src="img/cat_slim.svg" alt="">
+            <img width="50" height="53" class="cases__img cases__img--slim" src="img/cat_slim.svg" alt="">
             <h2 class="header cases__title">ПОХУДЕНИЕ</h2>
 
             <p class="cases__text text">
@@ -101,7 +101,7 @@
           </div>
 
           <div class="cases__item">
-            <img class="cases__img cases__img--mass" src="img/cat_mass.svg" alt="">
+            <img width="67" height="50" class="cases__img cases__img--mass" src="img/cat_mass.svg" alt="">
             <h2 class="header cases__title">НАБОР МАССЫ</h2>
 
             <p class="cases__text text">
@@ -124,7 +124,7 @@
           <ul class="how-it-works__list">
 
             <li class="how-it-works__item">
-              <img class="how-it-works__icon" src="img/how_it_works_1.svg" alt="">
+              <img width="60" height="60" class="how-it-works__icon" src="img/how_it_works_1.svg" alt="">
               <span class="how-it-works__text text">
                 Функциональное питание содержит только полезные питательные вещества.
               </span>
@@ -132,7 +132,7 @@
             </li>
 
             <li class="how-it-works__item">
-              <img class="how-it-works__icon" src="img/how_it_works_2.svg" alt="">
+              <img width="60" height="60" class="how-it-works__icon" src="img/how_it_works_2.svg" alt="">
               <span class="how-it-works__text text">
                 Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
               </span>
@@ -140,7 +140,7 @@
             </li>
 
             <li class="how-it-works__item">
-              <img class="how-it-works__icon" src="img/how_it_works_3.svg" alt="">
+              <img width="60" height="60" class="how-it-works__icon" src="img/how_it_works_3.svg" alt="">
               <span class="how-it-works__text text">
                 Замените один-два приема обычной еды на наше функциональное питание.
               </span>
@@ -148,7 +148,7 @@
             </li>
 
             <li class="how-it-works__item">
-              <img class="how-it-works__icon" src="img/how_it_works_4.svg" alt="">
+              <img width="60" height="60" class="how-it-works__icon" src="img/how_it_works_4.svg" alt="">
               <span class="how-it-works__text text">
                 Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
               </span>
@@ -229,7 +229,7 @@
               <p class="invation__adress text">
                 ул. Большая
                 Конюшенная, д.&nbsp;19/8
-                <br><br>
+                <br><br>&nbsp;
                 Санкт&#8209;Петербург
               </p>
 
@@ -273,11 +273,11 @@
         </div>
 
         <div class="page-footer__creators">
-          <div class="page-footer__academy-text">
+          <a class="page-footer__academy-text" href="https://htmlacademy.ru/intensive/adaptive">
             <p class="academy-text">HTML Academy</p>
-          </div>
+          </a>
           <div class="page-footer__academy-logo">
-            <a class="academy-logo" href="https://www.htmlacademy.ru">
+            <a class="academy-logo" href="https://htmlacademy.ru/intensive/adaptive">
               <svg width="27" height="34">
                 <use xlink:href="img/academy-logo-sprite.svg#logo"></use>
               </svg>

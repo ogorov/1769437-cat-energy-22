@@ -226,10 +226,10 @@
       padding: @padding - 1px;
       padding-left: @padding + 4px;
     }
+  }
 
-    &:disabled {
-      opacity: 30%;
-    }
+  &:disabled {
+    opacity: 30%;
   }
 
   &--radio,
@@ -312,6 +312,10 @@
   background-color: @base-green;
 }
 
+.form__input:disabled + .form__radio {
+  opacity: 30%;
+}
+
 .form__checkbox {
   box-sizing: border-box;
   width: 29px;
@@ -324,6 +328,10 @@
     box-shadow: 0 0 0 1px @base-green;
   }
 
+  &:disabled {
+    opacity: 30%;
+  }
+
   @media (min-width: @tablet-width) {
     width: 40px;
     height: 40px;
@@ -334,6 +342,10 @@
   background-image: url("/img/tick.svg");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.form__input:disabled + .form__checkbox {
+  opacity: 30%;
 }
 
 .form__legend {
