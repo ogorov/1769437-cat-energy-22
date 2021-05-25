@@ -12,10 +12,10 @@
     <link rel="icon" href="img/favicon-16.png" sizes="16x16" type="image/png">
     <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
 
-    <link rel="preload" href="fonts/oswaldmedium.woff" type="font">
-    <link rel="preload" href="fonts/oswaldmedium.woff2" type="font">
-    <link rel="preload" href="fonts/oswaldregular.woff" type="font">
-    <link rel="preload" href="fonts/oswaldregular.woff2" type="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
 
   </head>
   <body class="page__body">
@@ -23,16 +23,22 @@
     <header class="page-header page-header--index">
       <div class="container page-header__container">
         <div class="page-header__main">
+
           <div class="page-header__logo-img">
-            <a class="logo-img logo-img--mobile" href="/"></a>
+            <picture>
+              <source media="(min-width: 1100px)" srcset="img/logo-img-desktop.svg">
+              <source media="(min-width: 760px)" srcset="img/logo-img-tablet.svg">
+              <img width="34" height="38" class="logo-img logo-img--mobile" src="img/logo-img-mobile.svg" alt="">
+            </picture>
           </div>
+
           <div class="page-header__logo-text">
-            <img class="logo-text" src="img/logo.svg" alt="">
+            <img width="101" height="18" class="logo-text" src="img/logo.svg" alt="">
           </div>
 
           <button class="page-header__burger" id="burger">
-            <img id="burger-img" src="img/burger.svg" alt="" hidden>
-            <img id="cross-img" src="img/cross.svg" alt="" hidden>
+            <img width="24" height="18" id="burger-img" src="img/burger.svg" alt="" hidden>
+            <img width="20" height="20" id="cross-img" src="img/cross.svg" alt="" hidden>
           </button>
         </div>
 
@@ -41,10 +47,10 @@
             <a class="page-header__page-link page-header__page-link--index page-header__page-link--active" href="/">ГЛАВНАЯ</a>
           </li>
           <li class="page-header__menu-item">
-            <a class="page-header__page-link page-header__page-link--index" href="/catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
+            <a class="page-header__page-link page-header__page-link--index" href="catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
           </li>
           <li class="page-header__menu-item">
-            <a class="page-header__page-link page-header__page-link--index" href="/form.html">ПОДБОР ПРОГРАММЫ</a>
+            <a class="page-header__page-link page-header__page-link--index" href="form.html">ПОДБОР ПРОГРАММЫ</a>
           </li>
         </ul>
       </div>
@@ -71,7 +77,7 @@
               <source media="(min-width: 760px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x">
               <img class="promo__img-jar" src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x" alt="">
             </picture>
-            <button class="promo__button button button--green">ПОДОБРАТЬ ПРОГРАММУ</button>
+            <a class="button button--link button--green promo__button" href="/form.html">ПОДОБРАТЬ ПРОГРАММУ</a>
           </div>
         </div>
         <div class="promo__background-image"></div>
@@ -82,7 +88,7 @@
 
         <div class="container cases__container">
           <div class="cases__item">
-            <img class="cases__img cases__img--slim" src="img/cat_slim.svg" alt="">
+            <img width="50" height="53" class="cases__img cases__img--slim" src="img/cat_slim.svg" alt="">
             <h2 class="header cases__title">ПОХУДЕНИЕ</h2>
 
             <p class="cases__text text">
@@ -95,11 +101,11 @@
           </div>
 
           <div class="cases__item">
-            <img class="cases__img cases__img--mass" src="img/cat_mass.svg" alt="">
+            <img width="67" height="50" class="cases__img cases__img--mass" src="img/cat_mass.svg" alt="">
             <h2 class="header cases__title">НАБОР МАССЫ</h2>
 
             <p class="cases__text text">
-              Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+              Заработать авторитет среди дворовых котов и&nbsp;даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
 
             <div class="cases__item-footer">
@@ -118,7 +124,7 @@
           <ul class="how-it-works__list">
 
             <li class="how-it-works__item">
-              <img class="how-it-works__icon" src="img/how_it_works_1.svg" alt="">
+              <img width="60" height="60" class="how-it-works__icon" src="img/how_it_works_1.svg" alt="">
               <span class="how-it-works__text text">
                 Функциональное питание содержит только полезные питательные вещества.
               </span>
@@ -126,7 +132,7 @@
             </li>
 
             <li class="how-it-works__item">
-              <img class="how-it-works__icon" src="img/how_it_works_2.svg" alt="">
+              <img width="60" height="60" class="how-it-works__icon" src="img/how_it_works_2.svg" alt="">
               <span class="how-it-works__text text">
                 Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
               </span>
@@ -134,7 +140,7 @@
             </li>
 
             <li class="how-it-works__item">
-              <img class="how-it-works__icon" src="img/how_it_works_3.svg" alt="">
+              <img width="60" height="60" class="how-it-works__icon" src="img/how_it_works_3.svg" alt="">
               <span class="how-it-works__text text">
                 Замените один-два приема обычной еды на наше функциональное питание.
               </span>
@@ -142,7 +148,7 @@
             </li>
 
             <li class="how-it-works__item">
-              <img class="how-it-works__icon" src="img/how_it_works_4.svg" alt="">
+              <img width="60" height="60" class="how-it-works__icon" src="img/how_it_works_4.svg" alt="">
               <span class="how-it-works__text text">
                 Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
               </span>
@@ -163,7 +169,7 @@
 
             <p class="life-example__text text">
               Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
-              При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+              При этом он не менял своих привычек и по&#8209;прежнему спит по 16 часов в день.
             </p>
 
             <div class="life-example__stats">
@@ -217,14 +223,14 @@
               <h2 class="header invation__title">
                 ПРИГЛАШАЕМ
                 К&nbsp;СОТРУДНИЧЕСТВУ
-                ДИЛЛЕРОВ!
+                ДИЛЕРОВ!
               </h2>
 
               <p class="invation__adress text">
                 ул. Большая
-                Конюшенная, д. 19/8
-                <br><br>
-                Санкт-Петербург
+                Конюшенная, д.&nbsp;19/8
+                <br><br>&nbsp;
+                Санкт&#8209;Петербург
               </p>
 
             </div>
@@ -249,17 +255,17 @@
         <div class="page-footer__social-networks">
           <div class="social-networks">
             <a class="social-networks__item" href="">
-              <svg class="social-networks__icon social-networks__icon--vkontakte" width="28" height="22">
+              <svg class="social-networks__icon social-networks__icon social-networks__icon--vkontakte" width="28" height="22" aria-label="vkontakte">
                 <use xlink:href="img/icons-sprite.svg#vkontakte"></use>
               </svg>
             </a>
             <a class="social-networks__item" href="">
-              <svg class="social-networks__icon social-networks__icon--instagram" width="20" height="20">
+              <svg class="social-networks__icon social-networks__icon social-networks__icon--instagram" width="20" height="20" aria-label="instagram">
                 <use xlink:href="img/icons-sprite.svg#instagram"></use>
               </svg>
             </a>
             <a class="social-networks__item" href="">
-              <svg class="social-networks__icon social-networks__icon--facebook" width="22" height="22">
+              <svg class="social-networks__icon social-networks__icon social-networks__icon--facebook" width="22" height="22" aria-label="facebook">
                 <use xlink:href="img/icons-sprite.svg#facebook"></use>
               </svg>
             </a>
@@ -267,11 +273,11 @@
         </div>
 
         <div class="page-footer__creators">
-          <div class="page-footer__academy-text">
+          <a class="page-footer__academy-text" href="https://htmlacademy.ru/intensive/adaptive">
             <p class="academy-text">HTML Academy</p>
-          </div>
+          </a>
           <div class="page-footer__academy-logo">
-            <a class="academy-logo" href="https://www.htmlacademy.ru">
+            <a class="academy-logo" href="https://htmlacademy.ru/intensive/adaptive">
               <svg width="27" height="34">
                 <use xlink:href="img/academy-logo-sprite.svg#logo"></use>
               </svg>

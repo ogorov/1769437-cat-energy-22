@@ -12,10 +12,10 @@
     <link rel="icon" href="img/favicon-16.png" sizes="16x16" type="image/png">
     <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
 
-    <link rel="preload" href="fonts/oswaldmedium.woff" type="font">
-    <link rel="preload" href="fonts/oswaldmedium.woff2" type="font">
-    <link rel="preload" href="fonts/oswaldregular.woff" type="font">
-    <link rel="preload" href="fonts/oswaldregular.woff2" type="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
 
   </head>
   <body class="page__body">
@@ -23,16 +23,22 @@
     <header class="page-header">
       <div class="container page-header__container">
         <div class="page-header__main">
-          <div class="page-header__logo-img">
-            <a class="logo-img logo-img--mobile" href="/"></a>
-          </div>
+
+          <a class="page-header__logo-img" href="/">
+            <picture>
+              <source media="(min-width: 1100px)" srcset="img/logo-img-desktop.svg">
+              <source media="(min-width: 760px)" srcset="img/logo-img-tablet.svg">
+              <img width="34" height="38" class="logo-img logo-img--mobile" src="img/logo-img-mobile.svg" alt="">
+            </picture>
+          </a>
+
           <div class="page-header__logo-text">
-            <img class="logo-text" src="img/logo.svg" alt="">
+            <img width="101" height="18" class="logo-text" src="img/logo.svg" alt="">
           </div>
 
           <button class="page-header__burger" id="burger">
-            <img id="burger-img" src="img/burger.svg" alt="" hidden>
-            <img id="cross-img" src="img/cross.svg" alt="" hidden>
+            <img width="24" height="18" id="burger-img" src="img/burger.svg" alt="" hidden>
+            <img width="20" height="20" id="cross-img" src="img/cross.svg" alt="" hidden>
           </button>
         </div>
 
@@ -41,10 +47,10 @@
             <a class="page-header__page-link" href="/">ГЛАВНАЯ</a>
           </li>
           <li class="page-header__menu-item">
-            <a class="page-header__page-link" href="/catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
+            <a class="page-header__page-link" href="catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
           </li>
           <li class="page-header__menu-item">
-            <a class="page-header__page-link page-header__page-link--active" href="/form.html">ПОДБОР ПРОГРАММЫ</a>
+            <a class="page-header__page-link page-header__page-link--active" href="form.html">ПОДБОР ПРОГРАММЫ</a>
           </li>
         </ul>
       </div>
@@ -209,14 +215,14 @@
               <h2 class="header invation__title">
                 ПРИГЛАШАЕМ
                 К&nbsp;СОТРУДНИЧЕСТВУ
-                ДИЛЛЕРОВ!
+                ДИЛЕРОВ!
               </h2>
 
               <p class="invation__adress text">
                 ул. Большая
-                Конюшенная, д. 19/8
-                <br><br>
-                Санкт-Петербург
+                Конюшенная, д.&nbsp;19/8
+                <br><br>&nbsp;
+                Санкт&#8209;Петербург
               </p>
 
             </div>
@@ -228,29 +234,30 @@
         </div>
 
       </section>
+
     </main>
 
     <footer class="page-footer">
 
       <div class="container page-footer__container">
         <div class="page-footer__logo">
-          <img class="logo-text logo-text--footer" src="img/logo.svg" alt="">
+          <img width="101" height="18" class="logo-text logo-text--footer" src="img/logo.svg" alt="">
         </div>
 
         <div class="page-footer__social-networks">
           <div class="social-networks">
             <a class="social-networks__item" href="">
-              <svg class="social-networks__icon social-networks__icon--vkontakte" width="28" height="22">
+              <svg class="social-networks__icon social-networks__icon--vkontakte" width="28" height="22" aria-label="vkontakte">
                 <use xlink:href="img/icons-sprite.svg#vkontakte"></use>
               </svg>
             </a>
             <a class="social-networks__item" href="">
-              <svg class="social-networks__icon social-networks__icon--instagram" width="20" height="20">
+              <svg class="social-networks__icon social-networks__icon--instagram" width="20" height="20" aria-label="instagram">
                 <use xlink:href="img/icons-sprite.svg#instagram"></use>
               </svg>
             </a>
             <a class="social-networks__item" href="">
-              <svg class="social-networks__icon social-networks__icon--facebook" width="22" height="22">
+              <svg class="social-networks__icon social-networks__icon--facebook" width="22" height="22" aria-label="facebook">
                 <use xlink:href="img/icons-sprite.svg#facebook"></use>
               </svg>
             </a>
@@ -258,11 +265,11 @@
         </div>
 
         <div class="page-footer__creators">
-          <div class="page-footer__academy-text">
+          <a class="page-footer__academy-text" href="https://htmlacademy.ru/intensive/adaptive">
             <p class="academy-text">HTML Academy</p>
-          </div>
+          </a>
           <div class="page-footer__academy-logo">
-            <a class="academy-logo" href="https://www.htmlacademy.ru">
+            <a class="academy-logo" href="https://htmlacademy.ru/intensive/adaptive">
               <svg width="27" height="34">
                 <use xlink:href="img/academy-logo-sprite.svg#logo"></use>
               </svg>

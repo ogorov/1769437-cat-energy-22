@@ -41,4 +41,13 @@
 .button--grey {
   background-color: @base-grey;
   color: @dark-grey;
+
+  &:hover {
+    background-color: @dark-grey;
+  }
+
+  &:active {
+    background-color: @dark-grey;
+    color: fade(@white, 30%);
+  }
 }
